@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Node
+node_modules/
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment
+.env
+
+# Data files
+data/nsl-kdd/*.txt
+data/models/*.pkl
+data/logs/*.log
+
+# Keep directory structure
+!data/logs/.gitkeep
+!data/models/.gitkeep
