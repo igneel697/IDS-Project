@@ -22,3 +22,4 @@ data/logs/*.log
 # Keep directory structure
 !data/logs/.gitkeep
 !data/models/.gitkeep
+data/models/*.npy
