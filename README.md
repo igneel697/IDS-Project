@@ -14,13 +14,15 @@ Pranjal Neupane, Himakshi Bakhariya, Dilisha Shrestha - IDS Project 2026
 ## Week 1 Progress ✓
 
 ### Completed:
-- [x] Environment setup (WSL, Python, MySQL, Wireshark)
-- [x] Database creation (6 tables)
-- [x] NSL-KDD dataset downloaded and preprocessed
-- [x] ML models trained
-  - Decision Tree: **99.58% accuracy** ✓
-  - Naïve Bayes: 44.36% accuracy (backup)
-- [x] All targets met: TPR ≥85% ✓, FPR ≤15% ✓
+* Environment setup (WSL, Python, MySQL, Wireshark)
+* Database creation (6 tables)
+* NSL-KDD dataset downloaded and preprocessed
+  + Reduced to 20 features (removed high-signal dst_host_* counters)
+  + 60-40 stratified split: 75,583 train / 50,390 test samples
+* ML models trained
+  + Random Forest: ~85-90% accuracy (constrained depth/features)
+  + Naïve Bayes: ~82-88% accuracy (ComplementNB with MinMaxScaler)
+* Targets met: TPR ≥85% ✓, FPR ≤15% ✓
 
 ### Next Steps (Week 2):
 - [ ] Implement rule-based detection
