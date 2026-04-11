@@ -60,6 +60,34 @@ Pranjal Neupane (79010786), Himakshi Bakhariya (79010776), Dilisha Shrestha (790
   - End-to-end: capture → extract → detect → score → save
   - Tested: 523 packets, 89 alerts detected during port scan simulation
   
+## Week 3 Progress ✓
+
+### Completed
+
+- Flask REST API
+  - Health check, alerts, and statistics endpoints
+  - Filters by severity and attack type
+  - Connects directly to MySQL (ids_database)
+- React dashboard (dark theme)
+  - Alerts table with severity colour coding
+  - Filter alerts by severity level (Critical, High, Medium, Low)
+  - Auto-refreshes every 10 seconds
+  - Live alert count in navbar with NEW badge on fresh detections
+- Statistics page
+  - Summary numbers (total alerts, critical, high, average risk score)
+  - Attack type breakdown pie chart
+  - Alerts by severity bar chart
+  - 24-hour alert timeline chart
+- End-to-end test
+  - All three systems running simultaneously (pipeline, API, dashboard)
+  - Port scan simulation detected and visible in dashboard within 10 seconds
+
+### Next Steps (Week 4)
+
+- User authentication (login page, protected routes)
+- Export alerts to CSV
+- Email notifications for Critical alerts
+- Deploy the full system to run automatically on startup
 ## About
 
 Final Year Project on a live IDS using Wireshark and tshark
